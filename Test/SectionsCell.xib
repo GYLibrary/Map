@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="SectionsCell" customModule="Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VVI-gK-UW5">
+                        <rect key="frame" x="15" y="7" width="75" height="75"/>
+                        <color key="backgroundColor" red="1" green="0.29451743591321233" blue="0.21078159870265811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VVI-gK-UW5" secondAttribute="height" multiplier="1:1" id="Ti5-Fh-qfo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTK-vA-Thr">
+                        <rect key="frame" x="147" y="34.5" width="28" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56I-Ku-qsM">
+                        <rect key="frame" x="0.0" y="89" width="313" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hdO-8M-AWS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vTK-vA-Thr" firstAttribute="leading" secondItem="VVI-gK-UW5" secondAttribute="trailing" constant="57" id="Cw2-Oy-tmf"/>
+                    <constraint firstAttribute="trailing" secondItem="56I-Ku-qsM" secondAttribute="trailing" id="IaI-db-R0y"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="vTK-vA-Thr" secondAttribute="trailing" constant="10" id="Ip8-Ii-tQT"/>
+                    <constraint firstAttribute="bottom" secondItem="56I-Ku-qsM" secondAttribute="bottom" id="MYF-JZ-IKm"/>
+                    <constraint firstItem="VVI-gK-UW5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="OZ6-JR-b2z"/>
+                    <constraint firstItem="vTK-vA-Thr" firstAttribute="centerY" secondItem="VVI-gK-UW5" secondAttribute="centerY" id="WbJ-jA-EAl"/>
+                    <constraint firstItem="56I-Ku-qsM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bqR-RD-Ek7"/>
+                    <constraint firstAttribute="bottom" secondItem="VVI-gK-UW5" secondAttribute="bottom" constant="7" id="wRY-bC-b4F"/>
+                    <constraint firstItem="VVI-gK-UW5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="zU4-OR-Mwe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="VVI-gK-UW5" id="m7k-ks-Fmi"/>
+                <outlet property="userNameLb" destination="vTK-vA-Thr" id="pHa-6t-M9x"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="78"/>
+        </tableViewCell>
+    </objects>
+</document>
